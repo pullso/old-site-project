@@ -1,0 +1,72 @@
+@import 'libs/_normalize.scss';
+@import 'libs/_fonts.scss';
+@import 'libs/_slick.scss';
+@import 'blocks/__mixsins';
+
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+body {
+	// font-family: 'Roboto', sans-serif;
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #5e5e5e;
+}
+
+.header__btn-menu {
+	display: none;
+	font-size: 28px;
+}
+
+#modal {
+	width: 300px;
+
+	input {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		outline: none;
+		height: 40px;
+		border: 1px solid #e6e6e6;
+		padding: 0 10px;
+
+		&[type="submit"] {
+			background-color: #ffc222;
+			border: none;
+		}
+	}
+}
+
+@import 'blocks/__header.scss';
+@import 'blocks/__slider.scss';
+@import 'blocks/_buttons';
+@import 'blocks/_services';
+@import 'blocks/_about';
+@import 'blocks/_form';
+@import 'blocks/_advantages';
+@import 'blocks/_news';
+@import 'blocks/_footer';
+@import 'blocks/_media';
