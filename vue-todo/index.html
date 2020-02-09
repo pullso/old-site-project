@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Todo-app</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="stats">
+        <h3 class="stats__title">{{ "Текущие задачи: " + tasks.length }}</h3>
+        <task @task_done="delete_task(index)" :data="data" v-for="(data, index) in tasks" :key="index"></task>
+      </div>
+      <div class="add_task">
+        <div class="add_task__input">
+          <input type="text" v-model="new_task.title" placeholder="Новая задача" />
+          <textarea v-model="new_task.descr" placeholder="Описание"></textarea>
+        </div>
+        <button @click="add_task()" class="add_task__btn">➕</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
