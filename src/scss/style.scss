@@ -1,0 +1,19 @@
+@import 'blocks/normalize';
+@import 'blocks/header';
+@import 'blocks/portfolio';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

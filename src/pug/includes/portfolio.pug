@@ -1,0 +1,25 @@
+section.portfolio
+  .container
+    h2.portfolio__title Портфолио
+
+    .portfolio__items
+
+
+      mixin item(title="default",descr,img_src,href)
+        .portfolio__item
+          .portfolio__item-wrapper
+            a(href=href)
+              img(src=img_src, alt="image").portfolio__img
+            a(href=href)
+            h3.portfolio__item-title !{title}
+            .portfolio__item-descr !{descr}
+
+
+      +item("Макет Органика","Верстка одностраничного сайта по PSD макету.",'/img/project_organica.jpg','asfaf')
+      +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
+      +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
+      +item("Макет Органика","Верстка одностраничного сайта по PSD макету.",'/img/project_organica.jpg','asfaf')
+      +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
+      +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
+
+
