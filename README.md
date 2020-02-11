@@ -16,7 +16,8 @@
 Написать мне в телеграмм:  [Перейти](https://t-do.ru/pullso/)
 
 ## Сертификаты о прохождении курсов
-Прошел курсы по HTML Верстке и JS.
+Прошел курсы по HTML,CSS и JS.
+Использовал на курсах: HTML5, CSS3, JS (ES-5,ES-6), GIT, Gulp ,Bootstrap, jQuery, Webpack, Parcel, Vue.js
 
 * [Сертифика №1](https://www.udemy.com/certificate/UC-fe0493a0-0124-4d23-a538-5c62b5903bcd)
 
