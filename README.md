@@ -12,6 +12,5 @@
 
 
 Перейти на Github репозиторий:[Перейти](https://github.com/pullso/pullso.github.io)
-
 Написать мне в телеграмм:[Перейти](https://t-do.ru/pullso/)
 
