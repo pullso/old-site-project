@@ -12,6 +12,7 @@
 
 
  [Перейти на мой Github репозиторий](https://github.com/pullso/pullso.github.io)
+ 
  [Написать мне в телеграмм](https://t-do.ru/pullso/)
 
 ## Сертификаты о прохождении курсов
