@@ -11,9 +11,8 @@
 * **[Перейти](https://pullso.github.io/Wordpress/)** - готовый простой проект по теме вордпресс.
 
 
- [Перейти на мой Github репозиторий](https://github.com/pullso/pullso.github.io) Перейти
-
- [Написать мне в телеграмм: ](https://t-do.ru/pullso/)
+ [Перейти на мой Github репозиторий](https://github.com/pullso/pullso.github.io)
+ [Написать мне в телеграмм](https://t-do.ru/pullso/)
 
 ## Сертификаты о прохождении курсов
 Прошел курсы по HTML,CSS и JS.
