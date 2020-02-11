@@ -17,7 +17,7 @@
 
 ## Сертификаты о прохождении курсов
 Прошел курсы по HTML,CSS и JS.
-Использовал на курсах: HTML5, CSS3, JS (ES-5,ES-6), GIT, Gulp ,Bootstrap, jQuery, Webpack, Parcel, Vue.js
+Использовал на курсах: HTML5, CSS3, JS (ES-5,ES-6), GIT, Gulp ,Bootstrap, jQuery, Webpack, Parcel, Vue.js, Pug
 
 * [Сертифика №1](https://www.udemy.com/certificate/UC-fe0493a0-0124-4d23-a538-5c62b5903bcd)
 
