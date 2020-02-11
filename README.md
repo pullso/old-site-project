@@ -11,4 +11,5 @@
 * **[Перейти](https://pullso.github.io/Wordpress/)** - готовый простой проект по теме вордпресс.
 
 
-[Перейти на Github репозитории](https://github.com/pullso/pullso.github.io)
+[Перейти на Github репозиторий](https://github.com/pullso/pullso.github.io)
+
