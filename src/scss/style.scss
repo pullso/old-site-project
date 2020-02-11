@@ -1,6 +1,7 @@
 @import 'blocks/normalize';
 @import 'blocks/header';
 @import 'blocks/portfolio';
+@import 'blocks/media';
 
 * {
   box-sizing: border-box;
@@ -10,10 +11,7 @@
 
 .container {
   max-width: 1140px;
-  margin: 20px auto;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }

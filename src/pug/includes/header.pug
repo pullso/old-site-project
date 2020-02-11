@@ -1,9 +1,36 @@
 header.header
-  .container
-    .header__title Павел Дубицкий
-    .header__subtitle.
-     Верстка сайтов на HTML и CSS <br>
-     HTML5 CSS3 JS jQuery
-    .header__arrow
-      <i class="fa fa-chevron-down" arria-hidden="true"></i>
+
+  .fullscreen-bg
+    .container
+      .overlay
+      .header__wrapper
+        .header__photo(data-wow-iteration="10" class="wow pulse" data-wow-delay="2.5s" data-wow-duration="3s")
+          img(src="/img/header__photo.jpeg", alt="my photo" class="wow bounceInUp")
+        h1.header__title(class="wow bounceInLeft" data-wow-delay="0.5s") Павел Дубицкий
+        .header__subtitle(class="wow bounceInRight" data-wow-delay="1s").
+          Верстка сайтов и Front-End разработка с применением <br>
+          HTML5 CSS3 ScSS JS jQuery Vue.js
+
+        .header__links
+          ul
+            //- li
+            //-   a(href='mailto:p.dubitskiy@ya.ru' target="_blank")
+            //-     <i class="fa fa-envelope fa-inverse fa-3x"></i>
+            li
+              a(href="https://github.com/pullso/"  target="_blank" class="wow rollIn" data-wow-delay="1.5s")
+                <i class="fa fa-github fa-inverse fa-3x"></i>
+            li
+              a(href="https://t-do.ru/pullso"  target="_blank" class="wow rollIn" data-wow-delay="1.7s")
+                <i class="fa fa-telegram fa-inverse fa-3x"></i>
+            li
+              a(href="tel:+79920105554"  type="phone" class="wow rollIn" data-wow-delay="1.9s")
+                <i class="fa fa-phone-square fa-inverse fa-3x"></i>
+        .header__arrow
+          i(class="fa fa-chevron-down" class="wow fadeInDown" data-wow-delay="2s" data-wow-iteration="20")
+    <video loop="" muted="" autoplay="" poster="/img/video/Words.jpg" class="fullscreen-bg__video">
+        <source src="/img/video/Words.mp4" type="video/mp4">
+        <source src="/img/video/Words.webm" type="video/webm">
+    </video>
+
+
 

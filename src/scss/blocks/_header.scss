@@ -1,35 +1,113 @@
 .header {
-  height: 100vh;
-  background: url('../img/bg-header.jpg') center center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  max-height: 1050px;
   position: relative;
+  overflow: hidden;
 
+  &__wrapper {
+    //padding-top: 50px;
+    //padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 1050px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  &__photo {
+    img {
+      width: 450px;
+      height: 450px;
+      border-radius: 100%;
+    }
+  }
   &__title {
     color: #ffffff;
-    font-size: 56px;
+    font-size: 76px;
     font-weight: 400;
     line-height: 62px;
     text-align: center;
+    // padding-top: 210px;
   }
   &__subtitle {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: 48px;
+    line-height: 48px;
     font-weight: 400;
     line-height: 42px;
+    //margin-bottom: 200px;
     text-align: center;
+    //  margin-bottom: 30px;
   }
   &__arrow {
+    //   margin-top: 30px;
     color: #fff;
-    font-size: 48px;
+    font-size: 39px;
     font-weight: 400;
     line-height: 40px;
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 30px;
+    left: 100%;
+    transform: translateX(-150%);
+    opacity: 0.7;
+  }
+
+  &__links {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 420px;
+    min-width: 200px;
+
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      cursor: pointer;
+
+      a {
+        display: inline-block;
+        cursor: pointer;
+        &:hover {
+          border-radius: 100px;
+          transform: translateY(-5px);
+          transition: 0.25s;
+          box-shadow: 2px 8px 20px rgba(76, 72, 72, 0.49);
+        }
+      }
+    }
+  }
+
+  .fullscreen-bg {
+    // overflow: hidden;
+    // z-index: -1;
+    // position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 45%;
+  }
+
+  .fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.83);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 }
