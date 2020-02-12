@@ -1,0 +1,14 @@
+.advantages {
+  .container {
+    max-width: 1000px;
+  }
+  .portfolio__item {
+    max-width: 290px;
+  }
+  .portfolio__item-descr {
+    padding-left: 20px;
+  }
+  &__title {
+    @include title(42px);
+  }
+}

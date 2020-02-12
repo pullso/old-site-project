@@ -131,11 +131,30 @@
       margin-bottom: 20px;
     }
   }
+
+  .portfolio {
+    &__items {
+      display: block;
+      margin: 0 auto;
+      img {
+        max-width: 290px;
+        max-height: 200px;
+      }
+    }
+    &__item {
+      display: block;
+      margin: 0 auto 20px;
+    }
+    &__item-descr {
+      max-width: 280px;
+    }
+  }
 }
 
 @media (max-width: 550px) {
   .header {
-    height: 300px;
+    // height: 300px;
+    height: 100vh;
     &__arrow {
       font-size: 22px;
       bottom: 40px;
@@ -152,7 +171,7 @@
     &__subtitle {
       max-width: 300px;
       font-size: 14px;
-      line-height: 14px;
+      line-height: 16px;
       margin-bottom: 20px;
     }
   }

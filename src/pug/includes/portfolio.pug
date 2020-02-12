@@ -6,12 +6,12 @@ section.portfolio
 
 
       mixin item(title="default",descr,img_src,href)
-        .portfolio__item(class="wow flipInY" data-wow-delay="1s")
+        .portfolio__item(class="wow flipInY" data-wow-delay="0.5s")
           .portfolio__item-wrapper
             a(href=href  target="_blank" )
-              img(src=img_src, alt="image" class="wow flipInX" data-wow-delay="1.5s").portfolio__img
-            a(href=href  target="_blank" class="wow flipInY" data-wow-delay="2s" )
-              h3.portfolio__item-title(class="wow pulse" data-wow-delay="5.5s" data-wow-iteration="20" data-wow-duration="10s") !{title}
+              img(src=img_src, alt="image" class="wow flipInX" data-wow-delay="1s").portfolio__img
+            a(href=href  target="_blank" class="wow flipInY" data-wow-delay="1.5s" )
+              h3.portfolio__item-title(class="wow pulse" data-wow-delay="5.5s" data-wow-iteration="20" data-wow-duration="3s") !{title}
             .portfolio__item-descr(class="wow flipInY" data-wow-delay="2s") !{descr}
 
 
@@ -19,13 +19,13 @@ section.portfolio
 
       +item("Лендинг для UBER","Верстка лендинга для UBER. Сделана мобильная адаптация. <br> <hr> Использовал HTML, Bootstrap, Sass.",'/img/portfolio/2.png','https://pullso.github.io/projects/Uber_bootstrap/src/')
 
-      +item("Каталог подбора пульсометров","Cайт по продаже пульсометров с слайдером и каталогом (без мобильной адаптации). <br> <hr> Использовал HTML, Scss, Slick, Validate, WOW.js",'/img/portfolio/3.png','https://pullso.github.io/projects/Pulse_flex/dist')
+      +item("Каталог подбора пульсометров","Cайт по продаже пульсометров с слайдером и каталогом (без мобильной адаптации). <br> <hr> Использовал HTML, Scss, Slick, Validate, WOW.js",'img/portfolio/3.png','https://pullso.github.io/projects/Pulse_flex/dist')
 
-      +item("Сайт по Його-турам в Индию","Создание на сайте вкладок, слайдера фотографий, таймера, калькулятора<hr> Использовал HTML, CSS, Bootstrap,JS ",'/img/portfolio/5.png','https://pullso.github.io/projects/yoga_js/')
-
-
-      +item("Лединг по теме WordPress","Верстка простого проекта на тему приглашения на обучение по Wordpress.  <hr> Использовал HTML и CSS",'/img/portfolio/6.png','https://pullso.github.io/projects/Wordpress/')
+      +item("Сайт по Його-турам в Индию","Создание на сайте вкладок, слайдера фотографий, таймера, калькулятора<hr> Использовал HTML, CSS, Bootstrap, JS ",'/img/portfolio/5.png','https://pullso.github.io/projects/yoga_js/')
 
 
-      +item("Приложение: Список задач","Простое мобильное приложение, работающее в браузере без перезагрузок(SPA)<hr> Использовал HTML, CSS, Vue.js",'/img/portfolio/4.png','asfaf')
+      +item("Лединг для вебинара по WordPress","Верстка простого проекта для  приглашения на вебинар по Wordpress.  <hr> Использовал HTML и CSS",'/img/portfolio/6.png','https://pullso.github.io/projects/Wordpress/')
+
+
+      +item("Приложение: Список задач","Простое мобильное приложение, работающее в браузере без перезагрузок(SPA)<hr> Использовал HTML, CSS, Vue.js",'/img/portfolio/4.png','https://pullso.github.io/projects/vue-todo/')
 

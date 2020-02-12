@@ -2,10 +2,13 @@
 @import 'blocks/header';
 @import 'blocks/portfolio';
 @import 'blocks/media';
+@import 'blocks/advantages';
+@import 'blocks/mixins';
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  //font-family: 'Roboto Condered', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 14px;
 }
 
