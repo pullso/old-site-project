@@ -3,8 +3,6 @@
 
 ## Список проектов:
 
-=======
-
 - **[Перейти](https://pullso.github.io/projects/landing_flex/)** - Лендинг для Юр.Компании. Верстка лендинга с слайдером и формой обратной связи.Сделана мобильная адаптация. Использовал Flex,Scss, jQuery, Slick, FancyBox.
 
 - **[Перейти](https://pullso.github.io/projects/Uber_bootstrap/src/)** - адаптивый лендинг по уберу на bootstrap.
