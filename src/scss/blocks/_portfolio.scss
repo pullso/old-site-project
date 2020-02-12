@@ -16,10 +16,12 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   &__img {
-    max-width: 360px;
+    width: 360px;
     height: 250px;
     background: center center/cover no-repeat;
+
     &:hover {
       transform: translateY(-5px);
       transition: 0.25s;
@@ -38,6 +40,7 @@
       margin-bottom: 20px;
       cursor: pointer;
       text-align: center;
+
       &:hover {
         color: #0052c2;
       }
