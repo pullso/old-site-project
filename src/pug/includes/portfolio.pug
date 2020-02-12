@@ -1,22 +1,22 @@
 section.portfolio
   .container
-    h2.portfolio__title Портфолио
+    h2.portfolio__title(class="wow flipInY" data-wow-delay="0.5s") Портфолио
 
     .portfolio__items
 
 
       mixin item(title="default",descr,img_src,href)
-        .portfolio__item
+        .portfolio__item(class="wow flipInY" data-wow-delay="1s")
           .portfolio__item-wrapper
-            a(href=href)
-              img(src=img_src, alt="image").portfolio__img
-            a(href=href)
-            h3.portfolio__item-title !{title}
-            .portfolio__item-descr !{descr}
+            a(href=href  target="_blank" )
+              img(src=img_src, alt="image" class="wow flipInX" data-wow-delay="1.5s").portfolio__img
+            a(href=href  target="_blank" class="wow flipInY" data-wow-delay="2s" )
+              h3.portfolio__item-title(class="wow pulse" data-wow-delay="5.5s" data-wow-iteration="20" data-wow-duration="10s") !{title}
+            .portfolio__item-descr(class="wow flipInY" data-wow-delay="2s") !{descr}
 
 
-      +item("Макет Органика","Верстка одностраничного сайта по PSD макету.",'/img/project_organica.jpg','asfaf')
-      +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
+      +item("Лендинг для Юр.компании","Адаптивный лендинг на flex по юридическим услугам.",'/img/portfolio/1.png','https://pullso.github.io/landing_flex/')
+      +item("Лендинг для UBER","Адаптивный лендинг с применением bootstrap.",'/img/portfolio/2.png','https://pullso.github.io/Uber_bootstrap/src/')
       +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
       +item("Макет Органика","Верстка одностраничного сайта по PSD макету.",'/img/project_organica.jpg','asfaf')
       +item("Макет Органика","Верстка",'/img/project_organica.jpg','asfaf')
