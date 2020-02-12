@@ -3,7 +3,7 @@
 
 ## Список проектов:
 
-- **[Перейти](https://pullso.github.io/projects/landing_flex/)** - адаптивный лендинг на флексах по юридическим услугам.
+- **[Перейти](https://pullso.github.io/projects/landing_flex/)** - Лендинг для Юр.Компании. Верстка лендинга с слайдером и формой обратной связи.Сделана мобильная адаптация. <hr> Использовал Flex,Scss, jQuery, Slick, FancyBox.
 - **[Перейти](https://pullso.github.io/projects/Uber_bootstrap/src/)** - адаптивый лендинг по уберу на bootstrap.
 - **[Перейти](https://pullso.github.io/projects/Pulse_flex/dist)** - сайт по продаже пульсометров (без мобильной адаптации адаптации)
 - **[Перейти](https://pullso.github.io/projects/vue-todo/)** - простое Todo приложение на Vue.js
