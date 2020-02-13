@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/pullso/pullso.github.io#readme",
   "devDependencies": {
+<<<<<<< HEAD
     "cssnano": "^4.1.10",
+=======
+>>>>>>> 81cad240aeaf5002c92e8ce480bd5a6b5ad6a571
     "pug": "^2.0.4",
     "sass": "^1.25.0"
   }
