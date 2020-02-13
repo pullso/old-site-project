@@ -1,0 +1,53 @@
+@import 'mixins';
+
+.portfolio {
+  min-height: 666px;
+  display: flex;
+  //padding-top: 70px;
+  //padding-bottom: 100px;
+  &__title {
+    @include title(40px);
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    //width: 360px;
+    width: 100%;
+    height: 250px;
+    background: center center/cover no-repeat;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.25s;
+      box-shadow: 2px 8px 20px rgba(0, 82, 194, 0.49);
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    max-width: 360px;
+    max-height: 360px;
+
+    &-title {
+      color: #000000;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      text-align: center;
+
+      &:hover {
+        color: #0052c2;
+      }
+    }
+
+    &-descr {
+      font-family: 'Montserrat', sans-serif;
+      //line-height: 24px;
+    }
+  }
+}

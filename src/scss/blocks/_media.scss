@@ -1,0 +1,178 @@
+@media (max-width: 1901px) {
+  .header {
+    &__photo img {
+      width: 350px;
+      height: 350px;
+    }
+    &__arrow {
+      bottom: 30px;
+    }
+    &__title {
+      font-size: 45px;
+    }
+    &__subtitle {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  .header {
+    &__photo img {
+      width: 300px;
+      height: 300px;
+    }
+    &__arrow {
+      bottom: 30px;
+    }
+    &__subtitle {
+      //      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .header {
+    &__photo img {
+      width: 200px;
+      height: 200px;
+    }
+    &__arrow {
+      bottom: 30px;
+    }
+    &__title {
+      font-size: 35px;
+    }
+    &__subtitle {
+      font-size: 22px;
+    }
+
+    &__links {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1274px) {
+  .header {
+    &__photo img {
+      width: 150px;
+      height: 150px;
+    }
+    &__arrow {
+      font-size: 30px;
+      bottom: 20px;
+    }
+    &__title {
+      font-size: 30;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .header {
+    &__photo {
+      margin-top: 0;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__arrow {
+      font-size: 22px;
+      bottom: 30px;
+    }
+    &__title {
+      font-size: 25;
+      margin: 0;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .fullscreen-bg {
+    background: url('../img/video/Words.jpg') center center / cover no-repeat;
+  }
+  .fullscreen-bg__video {
+    display: none;
+  }
+
+  .header {
+    &__wrapper {
+      padding-top: 10px;
+      margin: 0;
+    }
+    &__photo {
+      margin-top: 0;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__arrow {
+      font-size: 22px;
+      bottom: 30px;
+    }
+    &__title {
+      font-size: 25;
+      margin: 0;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .portfolio {
+    &__items {
+      display: block;
+      margin: 0 auto;
+      img {
+        max-width: 290px;
+        max-height: 200px;
+      }
+    }
+    &__item {
+      display: block;
+      margin: 0 auto 20px;
+    }
+    &__item-descr {
+      max-width: 280px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    // height: 300px;
+    height: 100vh;
+    &__arrow {
+      font-size: 22px;
+      bottom: 40px;
+    }
+    &__links {
+      margin: 0 auto;
+      display: block;
+      min-width: 200px;
+    }
+    &__title {
+      font-size: 16;
+      margin: 0;
+    }
+    &__subtitle {
+      max-width: 300px;
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
