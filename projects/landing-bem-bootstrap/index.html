@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web development (bootstrap)</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 logo-bar">
+            <div class="header-logo">WebDev</div>
+            <div class="menu-icon"><i class="fa fa-bars"></i></a></div>
+          </div>
+          <div class="col-xl-8 ml-auto align-self-center">
+            <nav >
+              <ul class="header-menu d-flex justify-content-end">
+                <li class="header-menu__item">
+                  <a href="/"><i class="fa fa-home"></i></a>
+                </li>
+                <li class="header-menu__item"><a href="#about">About</a></li>
+                <li class="header-menu__item"><a href="#services">Servicing</a></li>
+                <li class="header-menu__item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header-menu__item"><a href="#blog">Blog</a></li>
+                <li class="header-menu__item"><a href="#contact">Contact us</a></li>
+                <li class="header-menu__item"><i class="fa fa-search"></i></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="toTop"><i class="fa fa-chevron-up"></i></div>
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <h1 class="main__title">Web development project</h1>
+            <p class="main__text">Very suitable to support all web development projects</p>
+            <button class="button">OUR SERVICES</button>
+            <button class="button">HIRE IS NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">About Us</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-xl-3 col-md-6">
+            <img src="/img/about1.png" alt="" />
+            <h3 class="about_h3">Awesome Icons</h3>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            </p>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <img src="/img/about2.png" alt="" />
+            <h3 class="about_h3">One Page</h3>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            </p>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <img src="/img/about3.png" alt="" />
+            <h3 class="about_h3">Fully Responsive</h3>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Our Services</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <i class="fa fa-briefcase card__icon"></i>
+              <h3 class="about_h3">Portfolio</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+              <button class="card__btn">read more</button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <i class="fa fa-refresh card__icon"></i>
+              <h3 class="about_h3">Research</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+              <button class="card__btn">read more</button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <i class="fa fa-support card__icon"></i>
+              <h3 class="about_h3">Support</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+              <button class="card__btn">read more</button>
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row justify-content-center"> -->
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <i class="fa fa-product-hunt card__icon"></i>
+              <h3 class="about_h3">Documentation</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+              <button class="card__btn">read more</button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <i class="fa fa-connectdevelop card__icon"></i>
+              <h3 class="about_h3">Development</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+              <button class="card__btn">read more</button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <i class="fa fa-desktop card__icon"></i>
+              <h3 class="about_h3">Design</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              </p>
+              <button class="card__btn">read more</button>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Latest Works</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <button val="on" class="button" filter="all">ALL</button>
+            <button val="off" class="button" filter="wd">WEB DESIGN</button>
+            <button val="off" class="button" filter="ud">UI/UX DESIGN</button>
+            <button val="off" class="button" filter="moc">MOCKUPS</button>
+          </div>
+        </div>
+        <div class="row filter">
+          <div filter="wd" class="col-xl-4 col-md-6">
+            <img src="img/item1.png" alt="" />
+            <div class="text">
+              <h5>Hand Watch</h5>
+              <p>Web design</p>
+            </div>
+          </div>
+          <div filter="moc" class="col-xl-4 col-md-6">
+            <img src="img/item2.png" alt="" />
+            <div class="text">
+              <h5>One Day Pass</h5>
+              <p>Mockups</p>
+            </div>
+          </div>
+          <div filter="wd" class="col-xl-4 col-md-6">
+            <img src="img/item3.png" alt="" />
+            <div class="text">
+              <h5>Modal T-shirt</h5>
+              <p>Web design</p>
+            </div>
+          </div>
+          <div filter="moc" class="col-xl-4 col-md-6">
+            <img src="img/item4.png" alt="" />
+            <div class="text">
+              <h5>Flask</h5>
+              <p>Mockups</p>
+            </div>
+          </div>
+          <div filter="ud" class="col-xl-4 col-md-6">
+            <img src="img/item5.png" alt="" />
+            <div class="text">
+              <h5>Eplemost</h5>
+              <p>Ui/Ux Design</p>
+            </div>
+          </div>
+          <div filter="ud" class="col-xl-4 col-md-6">
+            <img src="img/item6.png" alt="" />
+            <div class="text">
+              <h5>The kitchens</h5>
+              <p>Ui/Ux Design</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <button val="on" filter="all" class="button">View all</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Pricing Plan</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="price">
+              <div class="price__head">
+                <p>Free Trial</p>
+
+                <sup>$</sup> 00<sub> per mount</sub>
+              </div>
+              <div class="price__body">
+                <ul>
+                  <li>30 Free Trail</li>
+                  <li>5 Free Projects</li>
+                  <li>PHP 5 Enabled</li>
+                  <li>24/7 Suports</li>
+                </ul>
+              </div>
+              <div class="price__footer">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="price">
+              <div class="price__head">
+                <p>Basic</p>
+
+                <sup>$</sup> 50<sub> per mount</sub>
+              </div>
+              <div class="price__body">
+                <ul>
+                  <li>30 Free Trail</li>
+                  <li>5 Free Projects</li>
+                  <li>PHP 5 Enabled</li>
+                  <li>24/7 Suports</li>
+                </ul>
+              </div>
+              <div class="price__footer">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="price">
+              <div class="price__head">
+                <p>Ultimates</p>
+
+                <sup>$</sup> 99<sub> per mount</sub>
+              </div>
+              <div class="price__body">
+                <ul>
+                  <li>30 Free Trail</li>
+                  <li>5 Free Projects</li>
+                  <li>PHP 5 Enabled</li>
+                  <li>24/7 Suports</li>
+                </ul>
+              </div>
+              <div class="price__footer">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Our Team Member</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center multiple-items">
+          <div class="col-xl-4">
+            <img src="img/team1.png" alt="" />
+            <h4>John Doe</h4>
+            <p>General Manager</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <img src="img/team2.png" alt="" />
+            <h4>Alexa Biru</h4>
+            <p>Office Director</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <img src="img/team3.png" alt="" />
+            <h4>Ronobir sing</h4>
+            <p>Manager</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <img src="img/team2.png" alt="" />
+            <h4>Doe John</h4>
+            <p>Admin</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <img src="img/team3.png" alt="" />
+            <h4>Alexa Biru</h4>
+            <p>Manager</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Blog</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row left">
+          <div class="col-xl-6 col-md-6">
+            <img src="img/blog1.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-xl-6 col-md-6">
+            <div class="blog__item">
+              <a href="">SEO Quis Vestibulum</a>
+              <div>
+                <span> <i class="fa fa-calendar"></i> 14.07.2020</span>
+                <span> <i class="fa fa-file"></i> Development</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab asperiores,
+                  quas accusantium corrupti suscipit veniam officiis ex illo rerum expedita omnis
+                  porro ipsam nam similique sit ipsum cupiditate consectetur!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row right">
+          <div class=" col-xl-6 col-md-6">
+            <img src="img/blog2.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-xl-6 col-md-6">
+            <div class="blog__item">
+              <a href="">SEO Quis Vestibulum</a>
+              <div>
+                <span> <i class="fa fa-calendar"></i> 14.07.2020</span>
+                <span> <i class="fa fa-file"></i> Development</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab asperiores,
+                  quas accusantium corrupti suscipit veniam officiis ex illo rerum expedita omnis
+                  porro ipsam nam similique sit ipsum cupiditate consectetur!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row left">
+          <div class="col-xl-6 col-md-6">
+            <img src="img/blog3.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-xl-6 col-md-6">
+            <div class="blog__item">
+              <a href="">SEO Quis Vestibulum</a>
+              <div>
+                <span> <i class="fa fa-calendar"></i> 14.07.2020</span>
+                <span> <i class="fa fa-file"></i> Development</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab asperiores,
+                  quas accusantium corrupti suscipit veniam officiis ex illo rerum expedita omnis
+                  porro ipsam nam similique sit ipsum cupiditate consectetur!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <button class="button button_blog">More View</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Contact Us</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-xl-3">
+            <div class="circle">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <p>Nobinagar savar,Dhaka Bangladesh</p>
+          </div>
+          <div class="col-xl-3">
+            <div class="circle">
+              <i class="fa fa-phone"></i>
+            </div>
+            <p>+8801743331996 +8801928737807</p>
+          </div>
+          <div class="col-xl-3">
+            <div class="circle">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <p>quickmasud@gmail.com quickmasud@yahoo.com</p>
+          </div>
+        </div>
+        <div class="row justify-content-center form">
+          <div class="col-xl-5">
+            <input type="text" placeholder="Your Name" />
+          </div>
+          <div class="col-xl-5">
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div class="col-xl-10">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message"></textarea>
+          </div>
+          <div class="col-xl-2 offset-xl-7"><button>Send</button></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12"><div class="footer__rules">All rights Reserved © 2020</div></div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

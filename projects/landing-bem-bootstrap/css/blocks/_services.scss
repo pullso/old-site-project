@@ -1,0 +1,48 @@
+.services {
+  color: #212121;
+  text-align: center;
+  padding-top: 165px;
+  padding-bottom: 125px;
+  background-color: #e4fdf9;
+}
+
+.card {
+  background-color: #fff;
+  padding: 50px 20px 40px;
+  transition: 0.4s;
+  margin-bottom: 30px;
+  &__icon {
+    font-size: 60px;
+    color: black;
+  }
+  &__btn {
+    width: 159px;
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid #212121;
+    background: transparent;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px 14px;
+    cursor: pointer;
+  }
+  .about__text {
+    margin-bottom: 40px;
+  }
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    background-color: #00897b;
+    color: #fff;
+    .card__icon {
+      color: white;
+    }
+    .card__btn {
+      border-color: #fff;
+      color: #fff;
+      transition: 0.4s;
+    }
+  }
+}

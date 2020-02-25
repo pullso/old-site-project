@@ -1,0 +1,41 @@
+@import './adds/font';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/buttons';
+@import './blocks/about';
+@import './blocks/services';
+@import './blocks/portfolio';
+@import './blocks/pricing';
+@import './blocks/_team.scss';
+@import './blocks/_blog.scss';
+@import './blocks/_footer.scss';
+@import './blocks/_media.scss';
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  background: #00897b;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #000;
+}

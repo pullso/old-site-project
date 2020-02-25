@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  padding: 10px 25px;
+  margin: 0 10px;
+  color: white;
+  transition: 0.3s;
+  background-color: #00897b;
+  border: 3px solid #00897b;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: uppercase;
+  &:hover {
+    border: 3px solid #f8f8f8;
+    background: transparent;
+  }
+}
+
+.portfolio .button:hover,
+.focused {
+  color: black;
+  border: 3px solid #00897b;
+  background: transparent;
+}

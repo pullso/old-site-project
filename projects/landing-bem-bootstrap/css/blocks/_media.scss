@@ -1,0 +1,118 @@
+@media screen and (max-width: 1024px) {
+  .header {
+    nav {
+      display: none;
+    }
+    .logo-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu-icon {
+      display: block;
+      background: #00897b;
+      border: none;
+      font-size: 25px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  .portfolio img {
+    max-width: 100%;
+  }
+  .blog {
+    &__item {
+      margin-top: 10px;
+    }
+  }
+  .footer {
+    input,
+    textarea {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 20px;
+    &__title {
+      font-size: 35px;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+    button {
+      margin-bottom: 15px;
+    }
+  }
+  .about,
+  .services,
+  .pricing,
+  .portfolio,
+  .team,
+  .footer,
+  .blog {
+    padding: 20px;
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+  .portfolio {
+    button {
+      margin-bottom: 15px;
+    }
+    .filter {
+      padding: 20px;
+    }
+  }
+  .team {
+    .multiple-items {
+      margin-top: 10px;
+      img {
+        max-width: 264px;
+      }
+      .dots-style {
+        margin-top: 10px;
+      }
+    }
+  }
+  .left,
+  .right {
+    flex-direction: column;
+  }
+  .blog {
+    width: 100%;
+    &__item {
+      width: 90%;
+
+      p {
+        width: 100%;
+      }
+    }
+    img {
+      max-width: 300px;
+    }
+
+    .right > div:first-child {
+      order: 1;
+    }
+    .right > div:last-child {
+      order: 2;
+    }
+    i {
+      margin-right: 5px;
+    }
+    .button_blog {
+      margin-top: 10px;
+    }
+  }
+  .footer {
+    .form {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.main {
+  background: url(../img/header.jpg.png) center center/cover no-repeat;
+  background-position: 0 100%;
+  padding: 180px 0;
+  text-align: center;
+  color: #ffffff;
+
+  &__title {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1.1px;
+    margin-bottom: 108px;
+  }
+}
