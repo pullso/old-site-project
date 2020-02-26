@@ -1,0 +1,25 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  background-color: green;
+  color: #fff;
+}
+
+li {
+  border: 1px solid black;
+}
+
+span {
+  background-color: blue;
+  color: #fff;
+  display: block;
+  width: 100px;
+  height: 73px;
+  margin-bottom: 100px;
+}
+
+.skills {
+  padding: 40px;
+}
