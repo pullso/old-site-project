@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/script.js"],"names":["WOW","init"],"mappings":";CAAA,IAAIA,KAAMC","file":"script.41aced6c.js","sourceRoot":"..","sourcesContent":["new WOW().init();\r\n"]}
