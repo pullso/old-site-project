@@ -16,10 +16,14 @@ span {
   color: #fff;
   display: block;
   width: 100px;
-  height: 73px;
+  padding: 5px 0;
   margin-bottom: 100px;
 }
 
 .skills {
   padding: 40px;
+}
+
+.logo {
+  width: 150px;
 }
