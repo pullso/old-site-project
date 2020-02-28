@@ -4,14 +4,23 @@
 
 body {
   font-family: Ubuntu;
+  padding: 0;
+  margin: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 .container {
-  max-width: 1200px;
-  padding: 15px auto;
+  width: 1170px;
+  margin: 0 auto;
 }
 .header {
-  background: linear-gradient(-31deg, #378fd9 0%, #4ebefe 100%) center center/ cover no-repeat;
+  background: linear-gradient(-31deg, #378fd9 0%, #4ebefe 100%);
   padding-top: 66px;
   padding-bottom: 72px;
 }
@@ -26,6 +35,7 @@ body {
 }
 
 .header__title {
+  margin-top: 171px;
   max-width: 555px;
   color: #ffffff;
   font-size: 37px;
@@ -43,6 +53,7 @@ body {
 }
 
 .header__text {
+  margin-top: 47px;
   width: 397px;
   color: #ffffff;
   font-family: 'Open Sans';
@@ -55,4 +66,21 @@ body {
 .header__right img {
   width: 641px;
   height: 641px;
+}
+
+.header__btn {
+  margin-top: 45px;
+  text-decoration: none;
+  display: inline-block;
+  width: 222px;
+  height: 56px;
+  background-color: #ffd429;
+  color: #2e2a1b;
+  font-family: 'Montserrat';
+  font-size: 15px;
+
+  letter-spacing: 0.3px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 20px;
 }
