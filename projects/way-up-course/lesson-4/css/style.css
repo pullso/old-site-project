@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Ubuntu;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 15px auto;
+}
+.header {
+  background: linear-gradient(-31deg, #378fd9 0%, #4ebefe 100%) center center/ cover no-repeat;
+  padding-top: 66px;
+  padding-bottom: 72px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.header__logo {
+  width: 98px;
+  height: 38px;
+}
+
+.header__title {
+  max-width: 555px;
+  color: #ffffff;
+  font-size: 37px;
+  font-weight: 700;
+  /* Text style for "С,  помощь" */
+  letter-spacing: 0.74px;
+  line-height: 49px;
+}
+
+.header__title span {
+  /* Text style for "мечтаю!" */
+  font-size: 59px;
+  letter-spacing: 1.18px;
+  line-height: 73px;
+}
+
+.header__text {
+  width: 397px;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.32px;
+}
+
+.header__right img {
+  width: 641px;
+  height: 641px;
+}
