@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Ubuntu;
+  font-family: 'Open Sans';
   padding: 0;
   margin: 0;
 }
@@ -14,6 +14,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: 'Ubuntu';
 }
 .container {
   width: 1170px;
@@ -26,7 +27,7 @@ h6 {
 }
 .header__wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 .header__logo {
@@ -63,24 +64,117 @@ h6 {
   letter-spacing: 0.32px;
 }
 
-.header__right img {
+.header__banner img {
   width: 641px;
   height: 641px;
+  padding-top: 10px;
 }
 
-.header__btn {
+.btn {
   margin-top: 45px;
   text-decoration: none;
   display: inline-block;
   width: 222px;
-  height: 56px;
   background-color: #ffd429;
   color: #2e2a1b;
   font-family: 'Montserrat';
   font-size: 15px;
-
   letter-spacing: 0.3px;
   text-align: center;
   cursor: pointer;
-  padding-top: 20px;
+  padding: 20px 0;
+}
+.btn:hover {
+  background-color: #f7cc21;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+.header__offer {
+  width: 555px;
+}
+
+.future {
+  padding: 108px 0 120px;
+}
+.future__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 81px;
+}
+.future__item {
+  text-align: center;
+}
+.future__item-title {
+  color: #201b2d;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.38px;
+  margin-top: 31px;
+}
+
+.future__item-text {
+  padding-top: 17px;
+  color: #201b2d;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  max-width: 299px;
+}
+.future__item img {
+  height: 70px;
+}
+.section-title {
+  color: #201b2d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.ticket {
+  padding-top: 104px;
+  padding-bottom: 110px;
+  background-color: #efecf4;
+}
+.ticket__form {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket__form input {
+  width: 343px;
+  height: 48px;
+  border-radius: 3px;
+  border: 1px solid #bbbbbb;
+  background-color: #ffffff;
+  color: #201b2d;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  max-width: 343px;
+}
+.ticket-btn {
+  width: 343px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  background-color: #164d7a;
+  padding: 62px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.28px;
 }
