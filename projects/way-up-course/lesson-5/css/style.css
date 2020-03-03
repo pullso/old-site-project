@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Ubuntu';
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  background: linear-gradient(-31deg, #378fd9 0%, #4ebefe 100%);
+  padding-top: 66px;
+  padding-bottom: 72px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header__logo {
+  width: 98px;
+  height: 38px;
+}
+
+.header__title {
+  margin-top: 171px;
+  max-width: 555px;
+  color: #ffffff;
+  font-size: 37px;
+  font-weight: 700;
+  /* Text style for "С,  помощь" */
+  letter-spacing: 0.74px;
+  line-height: 49px;
+}
+
+.header__title span {
+  /* Text style for "мечтаю!" */
+  font-size: 59px;
+  letter-spacing: 1.18px;
+  line-height: 73px;
+}
+
+.header__text {
+  margin-top: 47px;
+  width: 397px;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.32px;
+}
+
+.header__banner img {
+  width: 641px;
+  height: 641px;
+  padding-top: 10px;
+}
+
+.btn {
+  margin-top: 45px;
+  text-decoration: none;
+  display: inline-block;
+  width: 222px;
+  background-color: #ffd429;
+  color: #2e2a1b;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px 0;
+}
+.btn:hover {
+  background-color: #f7cc21;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+.header__offer {
+  width: 555px;
+}
+
+.future {
+  padding: 108px 0 120px;
+}
+.future__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 81px;
+}
+.future__item {
+  text-align: center;
+}
+.future__item-title {
+  color: #201b2d;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.38px;
+  margin-top: 31px;
+}
+
+.future__item-text {
+  padding-top: 17px;
+  color: #201b2d;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  max-width: 299px;
+  margin: 0 auto;
+}
+.future__item img {
+  height: 70px;
+}
+.section-title {
+  color: #201b2d;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.ticket {
+  padding-top: 104px;
+  padding-bottom: 110px;
+  background-color: #efecf4;
+}
+.ticket__form {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket__form input {
+  width: 343px;
+  height: 48px;
+  border-radius: 3px;
+  border: 1px solid #bbbbbb;
+  background-color: #ffffff;
+  color: #201b2d;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  max-width: 343px;
+}
+.ticket-btn {
+  width: 343px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  background-color: #164d7a;
+  padding: 62px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.28px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .header__banner img {
+    width: 591px;
+    height: 591px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .header__wrap {
+    flex-direction: column;
+  }
+  .header__offer,
+  .header__title {
+    width: 100%;
+  }
+  .header__text {
+    width: 90%;
+  }
+
+  .header__banner img {
+    display: block;
+  }
+
+  .future__wrap {
+    flex-direction: column;
+  }
+  .future__item-text {
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .header__banner img {
+    width: 521px;
+    height: 521px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .header__title {
+    margin-top: 40px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .section-title {
+    line-height: 32px;
+  }
+  .header__title {
+    width: 100%;
+  }
+  .header__banner img {
+    width: 301px;
+    height: 301px;
+  }
+  .ticket__form input {
+    width: 100%;
+  }
+  .ticket-btn {
+    width: 100%;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+}
