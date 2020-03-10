@@ -17,5 +17,6 @@
     "url": "https://github.com/pullso/pullso.github.io/issues"
   },
   "homepage": "https://github.com/pullso/pullso.github.io#readme",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }
