@@ -1,0 +1,132 @@
+@include _1200
+.works
+  &-wrap
+    &__item
+      width: 30%;
+      flex-wrap: wrap;
+      img
+        display: block
+        width: 100%
+
+@include _992
+  .services
+    .services-carousel .owl-item
+      width: 720px !important
+    .services-carousel item
+      width: 720px !important
+  .header
+    .nav
+      margin-bottom: 60px
+    .offer-cont__title
+      font-size: 45px
+    .video
+      width: 70%
+      height: 70%
+
+  .testimonials
+    .contributor
+      margin-top: 70px
+      &__desc
+        margin-bottom: 20px
+  .section-title
+    &__heading
+      font-size: 1.5em
+    &__label
+      margin-bottom: 10px
+@include _768
+  .services
+    .services-carousel .owl-item
+      width: 425px !important
+    .services-carousel item
+      width: 425px !important
+  .header
+    height: auto
+    .offer-cont__text
+      margin-bottom: 20px
+    .video
+      width: 85%
+      height: 70%
+    .hero
+      position: relative
+      top: 15px
+      right: 30px
+      height: 400px
+      width: 100%
+
+    .vh-dependent
+      height: auto
+      display: flex
+      align-items: center
+  h2
+    font-size: 1.5em
+  .problems
+    padding-top: 80px
+  .about
+    margin-top: 30px
+  .result
+    padding-top: 40px
+    .collage
+      position: relative
+      width: 100%
+    .easy
+      margin-left: 0
+      &__title
+        margin-top: 70px
+  .works
+    padding-top: 40px
+  .services
+    padding-top: 50px
+    .services-carousel
+      margin-top: 30px
+  .section-title
+    &__heading
+      font-size: 1.3em
+  .testimonials
+    padding-top: 70px
+    .contributor-carousel .owl-nav
+      margin-top: 40px
+
+@include _576
+  .services
+    .serv-list
+      margin-top: 40px
+      &_left
+        margin-left: 0
+      &__item
+        margin-bottom: 10px
+  .works
+    &-wrap
+      &__item
+        width: 100%
+        margin-bottom: 40px
+  .clients
+    padding-top: 70px
+    &-row
+      margin-top: 40px
+      flex-direction: column
+      text-align: center
+      &__item
+        margin-bottom: 30px
+  .footer
+    margin-top: 0
+    &__logo
+      margin: 40px auto
+
+@include _480
+  .works
+    &-tabs
+      flex-direction: column
+      &__item
+        margin-bottom: 40px
+  .result
+    .collage
+      img
+        width: 70%
+        height: 60%
+
+@include _320
+  .services
+    .services-carousel .owl-item
+      width: 320px !important
+    .services-carousel item
+      width: 320px !important
