@@ -8,12 +8,15 @@
         display: block
         width: 100%
 
-@include _992
+@media screen and (min-width:992px)
   .services
     .services-carousel .owl-item
       width: 720px !important
+      position: relative
     .services-carousel item
       width: 720px !important
+      position: relative
+@include _992
   .header
     .nav
       margin-bottom: 60px
@@ -34,11 +37,6 @@
     &__label
       margin-bottom: 10px
 @include _768
-  .services
-    .services-carousel .owl-item
-      width: 425px !important
-    .services-carousel item
-      width: 425px !important
   .header
     height: auto
     .offer-cont__text
@@ -87,13 +85,7 @@
       margin-top: 40px
 
 @include _576
-  .services
-    .serv-list
-      margin-top: 40px
-      &_left
-        margin-left: 0
-      &__item
-        margin-bottom: 10px
+
   .works
     &-wrap
       &__item
@@ -124,9 +116,3 @@
         width: 70%
         height: 60%
 
-@include _320
-  .services
-    .services-carousel .owl-item
-      width: 320px !important
-    .services-carousel item
-      width: 320px !important
