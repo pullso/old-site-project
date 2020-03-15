@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //получаем все строки таблицы кроме заголовка
   let sortedRows = Array.from(table.rows).slice(1);
   const unsortedRows = Array.from(table.rows).slice(1);
+  const status = table.rows[0].querySelectorAll('td');
 
   //функция преобразования даты в количество секунд с 1970
   const parseDate = date => {
@@ -97,73 +98,63 @@ document.addEventListener('DOMContentLoaded', () => {
     return newDate.getTime();
   };
 
-  table.rows[0].addEventListener('click', e => {
-    //узнаем параметр сортировки
-    let index = e.target.cellIndex;
-    //обнуляем сортировку если нажали на другой столбец
-    let status = table.rows[0].querySelectorAll('td');
+  const sortTable = (arr, index) => {
+    //флаг обратной сортировки
+    let back = false;
+
+    let target = status[index];
+    //удаление флагов активности с невыбранных ячеек
     status.forEach(item => {
-      if (item !== e.target) item.classList.remove('active', 'back');
+      if (item !== target) item.classList.remove('active', 'back');
     });
-    //возращение несортированной таблицы
-    if (e.target.classList.contains('back')) {
+    //возращение несортированной таблицы если на наименовании столбца есть флаг обратной сортировки
+    if (target.classList.contains('back')) {
+      target.classList.remove('back', 'active');
       table.tBodies[0].append(...unsortedRows);
-      e.target.classList.remove('back');
+
       return;
     }
-    switch (index) {
-      //сортировка Date
-      case 2:
-        if (e.target.classList.contains('active')) {
-          sortedRows.sort((rowA, rowB) =>
-            parseDate(rowA.cells[index].innerHTML) > parseDate(rowB.cells[index].innerHTML)
-              ? -1
-              : 1,
-          );
-          e.target.classList.add('back');
-          e.target.classList.remove('active');
-          table.tBodies[0].append(...sortedRows);
-          break;
-        }
-        sortedRows.sort((rowA, rowB) =>
-          parseDate(rowA.cells[index].innerHTML) > parseDate(rowB.cells[index].innerHTML) ? 1 : -1,
-        );
-        e.target.classList.add('active');
-        table.tBodies[0].append(...sortedRows);
-        break;
-      //сортировка Count
-      case 3:
-        if (e.target.classList.contains('active')) {
-          sortedRows.sort((rowA, rowB) =>
-            parseInt(rowA.cells[index].innerHTML) > parseInt(rowB.cells[index].innerHTML) ? -1 : 1,
-          );
-          e.target.classList.add('back');
-          e.target.classList.remove('active');
-          table.tBodies[0].append(...sortedRows);
-          break;
-        }
-        sortedRows.sort((rowA, rowB) =>
-          parseInt(rowA.cells[index].innerHTML) > parseInt(rowB.cells[index].innerHTML) ? 1 : -1,
-        );
-        e.target.classList.add('active');
-        table.tBodies[0].append(...sortedRows);
-        break;
-      //Сортировка Name,Id
-      default:
-        if (e.target.classList.contains('active')) {
-          sortedRows.sort((rowA, rowB) =>
-            rowA.cells[index].innerHTML > rowB.cells[index].innerHTML ? -1 : 1,
-          );
-          e.target.classList.add('back');
-          e.target.classList.remove('active');
-          table.tBodies[0].append(...sortedRows);
-          break;
-        }
-        sortedRows.sort((rowA, rowB) =>
-          rowA.cells[index].innerHTML > rowB.cells[index].innerHTML ? 1 : -1,
-        );
-        e.target.classList.add('active');
-        table.tBodies[0].append(...sortedRows);
+    //включение флага обратной сортировки
+    if (target.classList.contains('active')) {
+      target.classList.remove('active');
+      target.classList.add('back');
+      back = true;
     }
+    //сортировка массива с зависимости от выбранной ячейки
+    arr.sort((a, b) => {
+      switch (index) {
+        case 0:
+        case 3:
+          a = parseInt(a.cells[index].innerHTML);
+          b = parseInt(b.cells[index].innerHTML);
+          break;
+        case 2:
+          a = parseDate(a.cells[index].innerHTML);
+          b = parseDate(b.cells[index].innerHTML);
+          break;
+        default:
+          a = a.cells[index].innerHTML;
+          b = b.cells[index].innerHTML;
+          if (!back) {
+            if (a > b) return 1;
+            else return -1;
+          } else {
+            if (a < b) return 1;
+            else return -1;
+          }
+      }
+      if (back) {
+        return b - a;
+      }
+      return a - b;
+    });
+
+    //вывод отсортированной таблицы
+    table.tBodies[0].append(...arr);
+    if (!back) target.classList.add('active');
+  };
+
+  table.rows[0].addEventListener('click', e => {
+    sortTable(sortedRows, e.target.cellIndex);
   });
 });
