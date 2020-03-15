@@ -39,10 +39,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 22px;
 }
 .table th {
   font-weight: normal;
-  font-size: 20px;
 }
 .table .active {
   font-weight: bold;
