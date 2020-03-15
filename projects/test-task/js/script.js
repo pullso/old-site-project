@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //получаем все строки таблицы кроме заголовка
   let sortedRows = Array.from(table.rows).slice(1);
   const unsortedRows = Array.from(table.rows).slice(1);
-  //функция парсинга даты
+
+  //функция преобразования даты в количество секунд с 1970
   const parseDate = date => {
     date = date.replace(/\//g, '.');
     date = date.replace(' марта ', '.03.');
@@ -97,13 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   table.rows[0].addEventListener('click', e => {
+    //узнаем параметр сортировки
+    let index = e.target.cellIndex;
+    //обнуляем сортировку если нажали на другой столбец
+    let status = table.rows[0].querySelectorAll('td');
+    status.forEach(item => {
+      if (item !== e.target) item.classList.remove('active', 'back');
+    });
+    //возращение несортированной таблицы
     if (e.target.classList.contains('back')) {
       table.tBodies[0].append(...unsortedRows);
       e.target.classList.remove('back');
       return;
     }
-    //узнаем параметр сортировки
-    let index = e.target.cellIndex;
     switch (index) {
       //сортировка Date
       case 2:
