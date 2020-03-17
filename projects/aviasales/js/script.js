@@ -21,10 +21,23 @@ document.addEventListener('DOMContentLoaded', () => {
     'Киров',
     'Нижний Новгород',
     'Калининград',
-    'Ростов-на-Дону'
+    'Ростов-на-Дону',
+    'Выборг',
+    'Нижний Тагил',
+    'Караганда'
   ];
 
   inputCitiesFrom.addEventListener('input', () => {
-    console.log('sobutie');
+    dropdownCitiesFrom.textContent = '';
+
+    const filterCity = city.filter(item => {
+      return item.toLowerCase().includes(inputCitiesFrom.value.toLowerCase());
+    });
+    filterCity.forEach(item => {
+      const li = document.createElement('li');
+      li.classList.add('dropdown__city');
+      li.textContent = item;
+      dropdownCitiesFrom.append(li);
+    });
   });
 });
