@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   //получаем элеменеты страницы
-  const formSearch = document.querySelector('.form-searh'),
+  const formSearch = document.querySelector('.form-search'),
     inputCitiesFrom = document.querySelector('.input__cities-from'),
     inputCitiesTo = document.querySelector('.input__cities-to'),
     dropdownCitiesFrom = document.querySelector('.dropdown__cities-from'),
@@ -68,6 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
   dropdownCitiesTo.addEventListener('click', event => {
     selectCity(event, inputCitiesTo, dropdownCitiesTo);
   });
+  formSearch.addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = {
+      from: city.find(item => inputCitiesFrom.value === item.name).code,
+      to: city.find(item => inputCitiesTo.value === item.name).code,
+      when: inputDateDepart.value
+    };
+    console.log(formData);
+  });
+  //
 
   getData(citiesApi, data => {
     city = JSON.parse(data).filter(item => item.name);
