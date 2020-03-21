@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const citiesApi = 'database/cities.json',
     proxy = 'https://cors-anywhere.herokuapp.com/',
     API_KEY = 'f205fa4f7039f66a778eeb17d13449cd',
-    calendar = 'http://min-prices.aviasales.ru/calendar_preload',
+    calendar = 'https://min-prices.aviasales.ru/calendar_preload',
     MAX_COUNT = 10;
   let city = [];
   //функции
