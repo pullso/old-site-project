@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'TT Commons';
+  src: url("TTCommons-Regular.eot");
+  src: local("TT Commons Regular"), local("TTCommons-Regular"), url("TTCommons-Regular.eot?#iefix") format("embedded-opentype"), url("TTCommons-Regular.woff") format("woff"), url("TTCommons-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  src: url("TTCommons-Bold.eot");
+  src: local("TT Commons Bold"), local("TTCommons-Bold"), url("TTCommons-Bold.eot?#iefix") format("embedded-opentype"), url("TTCommons-Bold.woff") format("woff"), url("TTCommons-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  src: url("TTCommons-DemiBold.eot");
+  src: local("TT Commons DemiBold"), local("TTCommons-DemiBold"), url("TTCommons-DemiBold.eot?#iefix") format("embedded-opentype"), url("TTCommons-DemiBold.woff") format("woff"), url("TTCommons-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header {
+  background: url(../img/main-bg.jpg) top center no-repeat;
+  min-height: 1080px;
+  padding-top: 27px;
+  margin-top: 0px;
+}
+
+.header .nav {
+  max-height: 105px;
+}
+
+.header .logo {
+  height: 103px;
+  width: 113.23px;
+}
+
+.header .menu {
+  padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin-right: 37px;
+}
+
+.header .menu-item_active {
+  color: #ff0e0e;
+  padding-bottom: 46px;
+  border-bottom: 2px solid #ff0e0e;
+}
+
+.header .tel {
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 13px;
+  padding-top: 17px;
+}
+
+.header__btn {
+  margin-left: 13px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-color: #fff;
+  width: 205px;
+  padding-top: 8px;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  height: 52px;
+  background: transparent;
+  font-weight: 600;
+}
+
+.employee {
+  min-height: 1144px;
+  padding-top: 249px;
+  position: relative;
+}
+
+.employee .rectangle {
+  margin-left: 36px;
+  background: #c0d2e7;
+  mix-blend-mode: normal;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  position: absolute;
+  width: 1695.23px;
+  height: 798px;
+}
+
+.employee .rectangle_right {
+  margin-top: 56px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.employee .man-photo {
+  position: absolute;
+  left: 50px;
+  top: -190px;
+}
+
+.employee .man-photo_right {
+  left: 577px;
+  top: -125px;
+}
+
+.employee .cloud-photo {
+  position: absolute;
+  width: 695px;
+  height: 596px;
+  left: 24px;
+  z-index: 20;
+  top: 357px;
+}
+
+.employee .cloud-photo_right {
+  position: absolute;
+  width: 1897px;
+  height: 646px;
+  top: 430px;
+  left: 8px;
+}
+
+.employee .cloud-photo-right {
+  position: absolute;
+  width: 672px;
+  height: 596px;
+  left: 1101px;
+  top: 184px;
+  z-index: 0;
+}
+
+.employee .quote {
+  background: url(../img/union.png) top center no-repeat;
+  position: absolute;
+  z-index: 0;
+  width: 628px;
+  height: 234.75px;
+  top: 231px;
+  left: 121px;
+}
+
+.employee .quote_right {
+  left: 45px;
+  top: 243px;
+  height: 244.25px;
+}
+
+.employee .quote__text {
+  padding: 34px 40px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+}
+
+.employee .quote__text_right {
+  padding: 42.4px 40px;
+}
+
+.employee .quote__text-author {
+  padding-top: 32px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000;
+  margin: 0;
+}
+
+.employee .quote__text-desc {
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.dream {
+  padding-top: 213px;
+  position: relative;
+}
+
+.dream::before {
+  content: '';
+  background: url(../img/tree.png);
+  position: absolute;
+  width: 109px;
+  height: 388px;
+  left: 0px;
+  top: 10px;
+}
+
+.dream::after {
+  content: '';
+  background: url(../img/tree2.png);
+  position: absolute;
+  width: 128px;
+  height: 341px;
+  right: 0px;
+  top: 555px;
+}
+
+body {
+  font-family: 'TT Commons';
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+h1 {
+  margin-top: 468px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 82px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 82px;
+  color: #000;
+}
+
+.container-fluid {
+  max-width: 1806px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.dream {
+  padding-top: 213px;
+  position: relative;
+  &::before {
+    content: '';
+    background: url(../img/tree.png);
+    position: absolute;
+    width: 109px;
+    height: 388px;
+    left: 0px;
+    top: 10px;
+  }
+  &::after {
+    content: '';
+    background: url(../img/tree2.png);
+    position: absolute;
+    width: 128px;
+    height: 341px;
+    right: 0px;
+    top: 555px;
+  }
+}

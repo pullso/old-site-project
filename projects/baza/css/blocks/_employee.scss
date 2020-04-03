@@ -1,0 +1,86 @@
+.employee {
+  min-height: 1144px;
+  padding-top: 249px;
+  position: relative;
+  .rectangle {
+    margin-left: 36px;
+    background: #c0d2e7;
+    mix-blend-mode: normal;
+    transform: rotate(-5deg);
+    position: absolute;
+    width: 1695.23px;
+    height: 798px;
+    &_right {
+      margin-top: 56px;
+      transform: rotate(5deg);
+    }
+  }
+  .man-photo {
+    position: absolute;
+    left: 50px;
+    top: -190px;
+    &_right {
+      left: 577px;
+      top: -125px;
+    }
+  }
+  .cloud-photo {
+    position: absolute;
+    width: 695px;
+    height: 596px;
+    left: 24px;
+    z-index: 20;
+    top: 357px;
+    &_right {
+      position: absolute;
+      width: 1897px;
+      height: 646px;
+      top: 430px;
+      left: 8px;
+    }
+  }
+  .cloud-photo-right {
+    position: absolute;
+    width: 672px;
+    height: 596px;
+    left: 1101px;
+    top: 184px;
+    z-index: 0;
+  }
+  .quote {
+    background: url(../img/union.png) top center no-repeat;
+    position: absolute;
+    z-index: 0;
+    width: 628px;
+    height: 234.75px;
+    top: 231px;
+    left: 121px;
+    &_right {
+      left: 45px;
+      top: 243px;
+      height: 244.25px;
+    }
+    &__text {
+      padding: 34px 40px;
+      font-size: 30px;
+      line-height: 36px;
+      color: #000;
+      &_right {
+        padding: 42.4px 40px;
+      }
+      &-author {
+        padding-top: 32px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 34px;
+        color: #000;
+        margin: 0;
+      }
+      &-desc {
+        font-size: 24px;
+        line-height: 34px;
+        color: #000000;
+      }
+    }
+  }
+}
