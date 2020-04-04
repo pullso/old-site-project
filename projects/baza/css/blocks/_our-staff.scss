@@ -1,0 +1,25 @@
+.our-staff {
+  padding-top: 178px;
+  &__title {
+    padding-left: 60px;
+    padding-bottom: 80px;
+  }
+  &__row {
+    padding-bottom: 88px;
+  }
+  &__item {
+    &-title {
+      padding-top: 40px;
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 34px;
+      color: #000000;
+    }
+    &-desc {
+      font-size: 24px;
+      line-height: 34px;
+      color: #000000;
+    }
+  }
+}
