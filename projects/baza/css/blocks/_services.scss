@@ -1,0 +1,50 @@
+.services {
+  color: #000;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url(../img/tree.png);
+    position: absolute;
+    width: 109px;
+    height: 388px;
+    left: 0px;
+    top: 300px;
+  }
+  &::after {
+    content: '';
+    background: url(../img/tree2.png);
+    position: absolute;
+    width: 128px;
+    height: 341px;
+    right: 0px;
+    top: 855px;
+  }
+  h2 {
+    padding-top: 342px;
+    padding-bottom: 64px;
+  }
+  &__img {
+    position: absolute;
+    max-width: 99px;
+    max-height: 129px;
+    left: -240px;
+    top: 575px;
+  }
+  &__item {
+    padding-bottom: 68px;
+
+    &-text {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    &-desc {
+      padding-top: 7px;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
