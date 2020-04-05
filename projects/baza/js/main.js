@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.life-slider').slick({
     centerMode: true,
-    centerPadding: '100px',
+    centerPadding: '0px',
     slidesToShow: 3,
     arrows: false,
     autoplay: true,

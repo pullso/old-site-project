@@ -271,15 +271,29 @@
 }
 
 .our-life .life-slider {
-  padding-top: 78px;
-  padding-left: 53px;
+  padding-top: 83px;
+  padding-left: 78px;
+  width: 100%;
 }
 
-.our-life .life-slider img {
+.our-life .life-slider .slick-list {
+  overflow: visible;
+}
+
+.our-life .life-slider .slick-slide {
   max-width: 490px;
-  width: 100%;
+  width: 93%;
   max-height: 490px;
   height: 100%;
+  overflow: visible;
+  margin-right: 120px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.our-life .life-slider .slick-slide:nth-child(odd) {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 body {
