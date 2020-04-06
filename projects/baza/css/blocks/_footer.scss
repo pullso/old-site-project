@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 127px;
+  &__menu {
+    border-top: 1px solid #e4e4e4;
+    padding-top: 48px;
+    padding-left: 29px;
+    &_right {
+      &-item {
+        padding-left: 0;
+      }
+    }
+    &-item {
+      list-style-type: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-bottom: 27px;
+      line-height: 24px;
+      a {
+        color: #000;
+      }
+    }
+  }
+}

@@ -421,7 +421,33 @@
 
 .map {
   padding-top: 98px;
-  margin-bottom: 137px;
+}
+
+.footer {
+  margin-top: 127px;
+}
+
+.footer__menu {
+  border-top: 1px solid #e4e4e4;
+  padding-top: 48px;
+  padding-left: 29px;
+}
+
+.footer__menu_right-item {
+  padding-left: 0;
+}
+
+.footer__menu-item {
+  list-style-type: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 27px;
+  line-height: 24px;
+}
+
+.footer__menu-item a {
+  color: #000;
 }
 
 body {
